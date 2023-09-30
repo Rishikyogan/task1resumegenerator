@@ -1,0 +1,84 @@
+body {
+  font-family: Arial,sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+#nameT1{
+  text-align: center;
+}
+#contactT{
+  text-align: center;
+}
+#addressT{
+  text-align: center;
+}
+ 
+.social{
+  text-align: center;
+}
+.image{
+  text-align: center;
+}
+
+
+
+#cv-template{
+  display:none;
+}
+
+.myimg{
+  
+  border:5px solid rgb(0, 0, 0);
+  border-radius :500px;
+}
+
+.background{
+  background-color:aqua;
+}

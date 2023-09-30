@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Create your Resume</title>
+</head>
+<body>
+  <div class="container" id="cv-form">
+  <h1>Resume Generator</h1>
+   <div class="row">
+    <div class="col-md-6">
+        <h3>Personal Information</h3> 
+  
+        <div class="form-group mt-2">
+            <label for="Name">Your Name</label>
+            <input type="text" id="Name" class="form-control">
+        </div>
+  
+  
+        <div class="form-group mt-2">
+            <label for="Contact">Contact</label>
+            <input type="text" id="Contact" class="form-control">
+       </div>
+  
+  
+        <div class="form-group mt-2">
+            <label for="Address">Address</label>
+            <textarea type="text" id="Address" class="form-control" row="3"></textarea>
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="">Select your photo</label>
+          <input id="imgField" type="file" class="form-control">
+        </div>
+       
+       
+        <h2 class="secondary-text my-3">social links</h2>
+       
+       <div class="form-group mt-2">
+          <label for="Email">Email</label>
+          <input type="text" id="Email" class="form-control">
+       </div>
+
+       <div class="form-group mt-2">
+         <label for="instagram">Instagram</label>
+         <input type="text" id="Instagram" class="form-control">
+       </div>
+
+       <div class="form-group mt-2">
+         <label for="linked in">LinkedIn</label>
+         <input type="text" id="LinkedIn" class="form-control">
+       </div>
+
+    </div>
+    <div class="col-md-6">
+        <h3>Professional Information</h3>
+
+        <div class="form-group mt-2">
+            <label for="">Objective</label>
+            <textarea id="Objective" type="text" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group mt-2" id="we">
+            <label for="weField">Experience</label>
+            <textarea class="form-control weField" row="3"></textarea>
+            <div class="container text-center mt-2 weAddButton" id="weAddButton">
+              <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+            </div>
+        </div>
+
+
+        <div class="form-group mt-2" id="ed">
+            <label for="edField">Education</label>
+            <textarea type="text" class="form-control edField" row="3"></textarea>
+            <div class="container text-center mt-2 edAddButton" id="edAddButton">
+              <button onclick="addNewEDField()" class="btn btn-primary btn-sm">Add</button>
+            </div>
+        </div>
+
+        <div class="form-group mt-2" id="hobby">
+          <label for="hField">Hobbies</label>
+          <textarea type="text" class="form-control hField" row="3"></textarea>
+
+      </div>
+
+    
+    </div>
+  </div> 
+  <div class="container text-center mt-2">
+    <button onclick="generateCV()" class="btn.btn-primany.btn-lg">Generate</button>
+    
+  </div>
+ 
+ </div>
+
+
+ <div class="container" id="cv-template">
+
+    <div class="row">
+        <div class="col-md-4 text-center py-5 background">
+           <div class="image">
+             <img src="file:///C:/Users/Rishik%20Yogan/Downloads/Golden%20Turmeric%20Milk%20_%20Experience%20Life.png" alt=""
+             class="img-fluid myimg" width="150" height="150" id="imgTemplate">
+          
+            </div>
+            
+            <div class="container">
+                <p id="nameT1">Rishik yogan</p>
+                <p  id="contactT">+919837758237</p>
+                <p id="addressT">Address</p>
+                <hr/>
+                <div class="social">
+                  <p>
+                   <a id="mailT" href="#1">rishikyogan48@gmail.com</a>
+                  </p>
+
+                  <p>
+                   <a id="instaT" href="#1">https://www.instagram.com/siantros_</a>
+                  </p>
+
+                  <p>
+                   <a id="linkedT" href="#1">https://www.linkedin.com/rishikyogan</a>
+                  </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-8 py-5">
+          <h1 id="nameT2" class="text-center" style="font-weight:bold">Name</h1>
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Objective</h3>
+
+            </div>
+            <div class="card-body">
+              <p id="objectiveT">Lorem ipsum dolor sit amet, consectetur
+                 adipisicing elit. Necessitatibus nam 
+                 blanditiis laboriosam labore! Molestias amet 
+                 cumque esse? Fugiat officiis dicta, neque reprehenderit
+                  ut optio dolor eos cum, id qui molestias, similique dolore
+                   perferendis nobis. Commodi ad beatae nemo officia porro
+                    voluptatibus id explicabo! Quo laudantium aperiam, magni
+                     in facere consectetur?
+              </p>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Experience</h3>
+
+            </div>
+            <div class="card-body">
+             <vl id="weT">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+             </vl>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Education</h3>
+
+            </div>
+            <div class="card-body">
+             <vl id="edT">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+             </vl>
+            </div>
+          </div>
+
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Hobby</h3>
+
+            </div>
+            <div class="card-body">
+             <vl id="hobbyT">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.</li>
+             </vl>
+            </div>
+          </div>
+
+
+          <div class="container mt-3 text-center">
+            <button onclick="downloadCV()" class="btn background">
+              Download CV
+            </button>
+          </div>
+        </div>
+        <script src="script.js"></script>
+    
+
+    </div>
+ </div>
+
+</body>
+</html>
